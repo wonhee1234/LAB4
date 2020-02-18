@@ -1,0 +1,71 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Volunteer Form</title>
+		<style>
+		.box {
+			border: 1px solid #444;
+			background-color: #ccc;
+			margin: 20px 20px;
+			padding: 5px 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Volunteer Form</h1>
+	<form method="post" action=" http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" autocomplete="on">
+		<fieldset>
+			<legend>My Info</legend>
+			<p>
+				<label>First Name:</label>
+				<input type="text" name="first_name_field" >
+			</p>
+			<p>
+				<label>Last Name:</label>
+				<input type="text" name="last_name_field" >
+			</p>
+			<p>
+				<label>Phone Number:</label>
+				<input type="text" name="phone_field" >
+			</p>
+			<p>
+				<label>Email Address:</label>
+				<input type="email" name="email_field" >
+			</p>
+			<p>
+				<label>Gender:</label>
+				<input type="radio" name="gender_field" value="male">Male
+				<input type="radio" name="gender_field" value="Female">Female
+			</p>
+			<p>
+				<label>Age:</label>
+				<select name="age_field">
+					<option value="under18">Under 18</option>
+					<option value="18-24">18 - 24</option>
+					<option value="25-34">25 - 34</option>
+					<option value="35-44">35 - 44</option>
+					<option value="45-54">45 - 54</option>
+					<option value="65andover">65 and over</option>
+				</select>
+			</p>
+		</fieldset>
+		<p></p>
+		<fieldset>
+			<legend>My Availability</legend>
+			<p>Days Available:</p>
+			<p><input type="checkbox" name="available_field[]" value="Sunday">Sunday</p>
+			<p><input type="checkbox" name="available_field[]" value="Monday">Monday</p>
+			<p><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday</p>
+			<p><input type="checkbox" name="available_field[]" value="Wednesday">Wednesday</p>
+			<p><input type="checkbox" name="available_field[]" value="Thursday">Thursday</p>
+			<p><input type="checkbox" name="available_field[]" value="Friday">Friday</p>
+			<p><input type="checkbox" name="available_field[]" value="Saturday">Saturday</p>
+			<h3>Any Comments?</h3>
+			<p><textarea rows="20" cols="50" name="comments_field" placeholder="Enter comments here"></textarea></p>
+		</fieldset>
+		<p><input type="hidden" name="hidden_field" value="Wonhee Shin"></p>
+		<input type="submit" value="Send Me">
+	</form>
+</body>
+</html>
